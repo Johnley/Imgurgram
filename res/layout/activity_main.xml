@@ -7,36 +7,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
-
-    <LinearLayout android:id="@+id/layoutmain"
-        android:layout_width="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btn_pick_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:onClick="buttonClicked"
-            android:text="Pick Image" />
-
-        <Button
-            android:id="@+id/save_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.50"
-            android:text="Save" />
-
-     </LinearLayout>
+    
     <ImageView
         android:id="@+id/effect_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/image"
-        android:layout_below="@+id/layoutmain"
         android:layout_above="@+id/horizontalScrollView"
-/>
+        android:contentDescription="@string/filteredImageDescription"
+        android:src="@drawable/image" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -45,13 +23,14 @@
         android:layout_alignParentBottom="true">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/effect_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:onClick="buttonClicked"
                 android:padding="2dp"
                 android:src="@drawable/effect_black" />
@@ -60,13 +39,16 @@
                 android:id="@+id/effect_boost_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
+                android:contentDescription="@string/filterTypeDescription"
                 android:onClick="buttonClicked"
+                android:padding="2dp"
                 android:src="@drawable/effect_boost_1" />
+
             <ImageView
                 android:id="@+id/effect_boost_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_boost_2" />
@@ -74,6 +56,7 @@
                 android:id="@+id/effect_boost_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_boost_3" />
@@ -81,6 +64,7 @@
                 android:id="@+id/effect_brightness"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_brightness" />
@@ -88,6 +72,7 @@
                 android:id="@+id/effect_color_blue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_color_blue" />
@@ -95,6 +80,7 @@
                 android:id="@+id/effect_color_green"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_color_green" />
@@ -102,6 +88,7 @@
                 android:id="@+id/effect_color_red"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_color_red" />
@@ -109,6 +96,7 @@
                 android:id="@+id/effect_color_depth_32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_color_depth_32" />
@@ -116,6 +104,7 @@
                 android:id="@+id/effect_color_depth_64"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_color_depth_64" />
@@ -124,6 +113,7 @@
                 android:id="@+id/effect_contrast"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_contrast" />
@@ -131,6 +121,7 @@
                 android:id="@+id/effect_emboss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_emboss" />
@@ -138,6 +129,7 @@
                 android:id="@+id/effect_engrave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_engrave" />
@@ -145,6 +137,7 @@
                 android:id="@+id/effect_flea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_flea" />
@@ -152,6 +145,7 @@
                 android:id="@+id/effect_gamma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_gamma" />
@@ -159,6 +153,7 @@
                 android:id="@+id/effect_gaussian_blue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_gaussian_blue" />
@@ -166,6 +161,7 @@
                 android:id="@+id/effect_grayscale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_grayscale" />
@@ -180,6 +176,7 @@
                 android:id="@+id/effect_hue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_hue" />
@@ -187,6 +184,7 @@
                 android:id="@+id/effect_invert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_invert" />
@@ -194,6 +192,7 @@
                 android:id="@+id/effect_mean_remove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_mean_remove" />
@@ -208,6 +207,7 @@
                 android:id="@+id/effect_round_corner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_round_corner" />
@@ -215,6 +215,7 @@
                 android:id="@+id/effect_saturation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_saturation" />
@@ -222,6 +223,7 @@
                 android:id="@+id/effect_sepia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_sepia" />
@@ -229,6 +231,7 @@
                 android:id="@+id/effect_sepia_blue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_sepia_blue" />
@@ -236,6 +239,7 @@
                 android:id="@+id/effect_sepia_green"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_sepia_green" />
@@ -243,6 +247,7 @@
                 android:id="@+id/effect_sheding_cyan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_sheding_cyan" />
@@ -250,6 +255,7 @@
                 android:id="@+id/effect_sheding_green"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_sheding_green" />
@@ -257,6 +263,7 @@
                 android:id="@+id/effect_sheding_yellow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_sheding_yellow" />
@@ -264,6 +271,7 @@
                 android:id="@+id/effect_smooth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_smooth" />
@@ -271,6 +279,7 @@
                 android:id="@+id/effect_tint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_tint" />
@@ -278,6 +287,7 @@
                 android:id="@+id/effect_watermark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/filterTypeDescription"
                 android:padding="2dp"
                 android:onClick="buttonClicked"
                 android:src="@drawable/effect_watermark" />

@@ -4,5 +4,12 @@
     <string name="app_name">Imgurgram</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="btnSave">Save</string>
+    <string name="btnPick">Pick Image</string>
+    <string name="filteredImageDescription">Filtered Image</string>
+    <string name="filterTypeDescription">Filtered Image Preview</string>
+    <string name="action_camera">Camera</string>
+    <string name="action_gallery">Open Gallery</string>
+    <string name="action_save">Save Image</string>
 
 </resources>

@@ -58,43 +58,42 @@ public final class R {
         public static final int image=0x7f020024;
     }
     public static final class id {
-        public static final int action_settings=0x7f080024;
-        public static final int btn_pick_img=0x7f080001;
-        public static final int effect_black=0x7f080005;
-        public static final int effect_boost_1=0x7f080006;
-        public static final int effect_boost_2=0x7f080007;
-        public static final int effect_boost_3=0x7f080008;
-        public static final int effect_brightness=0x7f080009;
-        public static final int effect_color_blue=0x7f08000a;
-        public static final int effect_color_depth_32=0x7f08000d;
-        public static final int effect_color_depth_64=0x7f08000e;
-        public static final int effect_color_green=0x7f08000b;
-        public static final int effect_color_red=0x7f08000c;
-        public static final int effect_contrast=0x7f08000f;
-        public static final int effect_emboss=0x7f080010;
-        public static final int effect_engrave=0x7f080011;
-        public static final int effect_flea=0x7f080012;
-        public static final int effect_gamma=0x7f080013;
-        public static final int effect_gaussian_blue=0x7f080014;
-        public static final int effect_grayscale=0x7f080015;
-        public static final int effect_hue=0x7f080016;
-        public static final int effect_invert=0x7f080017;
-        public static final int effect_main=0x7f080003;
-        public static final int effect_mean_remove=0x7f080018;
-        public static final int effect_round_corner=0x7f080019;
-        public static final int effect_saturation=0x7f08001a;
-        public static final int effect_sepia=0x7f08001b;
-        public static final int effect_sepia_blue=0x7f08001c;
-        public static final int effect_sepia_green=0x7f08001d;
-        public static final int effect_sheding_cyan=0x7f08001e;
-        public static final int effect_sheding_green=0x7f08001f;
-        public static final int effect_sheding_yellow=0x7f080020;
-        public static final int effect_smooth=0x7f080021;
-        public static final int effect_tint=0x7f080022;
-        public static final int effect_watermark=0x7f080023;
-        public static final int horizontalScrollView=0x7f080004;
-        public static final int layoutmain=0x7f080000;
-        public static final int save_img=0x7f080002;
+        public static final int action_camera=0x7f080021;
+        public static final int action_gallery=0x7f080022;
+        public static final int action_save=0x7f080023;
+        public static final int effect_black=0x7f080002;
+        public static final int effect_boost_1=0x7f080003;
+        public static final int effect_boost_2=0x7f080004;
+        public static final int effect_boost_3=0x7f080005;
+        public static final int effect_brightness=0x7f080006;
+        public static final int effect_color_blue=0x7f080007;
+        public static final int effect_color_depth_32=0x7f08000a;
+        public static final int effect_color_depth_64=0x7f08000b;
+        public static final int effect_color_green=0x7f080008;
+        public static final int effect_color_red=0x7f080009;
+        public static final int effect_contrast=0x7f08000c;
+        public static final int effect_emboss=0x7f08000d;
+        public static final int effect_engrave=0x7f08000e;
+        public static final int effect_flea=0x7f08000f;
+        public static final int effect_gamma=0x7f080010;
+        public static final int effect_gaussian_blue=0x7f080011;
+        public static final int effect_grayscale=0x7f080012;
+        public static final int effect_hue=0x7f080013;
+        public static final int effect_invert=0x7f080014;
+        public static final int effect_main=0x7f080000;
+        public static final int effect_mean_remove=0x7f080015;
+        public static final int effect_round_corner=0x7f080016;
+        public static final int effect_saturation=0x7f080017;
+        public static final int effect_sepia=0x7f080018;
+        public static final int effect_sepia_blue=0x7f080019;
+        public static final int effect_sepia_green=0x7f08001a;
+        public static final int effect_sheding_cyan=0x7f08001b;
+        public static final int effect_sheding_green=0x7f08001c;
+        public static final int effect_sheding_yellow=0x7f08001d;
+        public static final int effect_smooth=0x7f08001e;
+        public static final int effect_tint=0x7f08001f;
+        public static final int effect_watermark=0x7f080020;
+        public static final int horizontalScrollView=0x7f080001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -103,8 +102,15 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
+        public static final int action_camera=0x7f050007;
+        public static final int action_gallery=0x7f050008;
+        public static final int action_save=0x7f050009;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int btnPick=0x7f050004;
+        public static final int btnSave=0x7f050003;
+        public static final int filterTypeDescription=0x7f050006;
+        public static final int filteredImageDescription=0x7f050005;
         public static final int hello_world=0x7f050002;
     }
     public static final class style {

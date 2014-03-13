@@ -1,6 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never" />
+    <item android:id="@+id/action_camera" 
+        android:title="@string/action_camera" 
+        android:showAsAction="always" 
+        android:icon="@android:drawable/ic_menu_camera"></item>
+    <item android:id="@+id/action_gallery" android:title="@string/action_gallery" android:icon="@android:drawable/ic_menu_gallery" android:showAsAction="always"></item>
+    <item android:id="@+id/action_save" android:title="@string/action_save" android:icon="@android:drawable/ic_menu_save" android:showAsAction="always"></item>
 </menu>
