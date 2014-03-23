@@ -22,6 +22,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.util.Base64;
 
 
 public class MainActivity extends Activity {
@@ -159,10 +160,7 @@ public class MainActivity extends Activity {
                     bmp = decodeUri(selectedImage);
                     if(bmp !=null){
                         src = bmp;
-                        imgMain.setImageBitmap(bmp);
-                    }
-                    else{
-                    	Toast.makeText(this, "Could not load image", Toast.LENGTH_SHORT).show(); //$NON-NLS-1$
+                        imgMain.setImageBitmap(src);
                     }
                 }
             case REQUEST_TAKE_PHOTO:
@@ -256,5 +254,12 @@ public class MainActivity extends Activity {
     	dir = new File(file_path);
     	if(!dir.exists())
     		dir.mkdirs();
+    }
+    private boolean imgurUpload (Bitmap bmp){
+    	
+    	
+    	
+    	
+    	return false;
     }
 }
