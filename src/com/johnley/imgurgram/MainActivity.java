@@ -161,6 +161,12 @@ public class MainActivity extends Activity {
                     if(bmp !=null){
                         src = bmp;
                         imgMain.setImageBitmap(src);
+<<<<<<< HEAD
+=======
+                    }
+                    else{
+                    	Toast.makeText(this, "Could not load image", Toast.LENGTH_SHORT).show(); //$NON-NLS-1$
+>>>>>>> 96914e30ce1ce15dd7e8bb6f71cafa7d333c2fba
                     }
                 }
             case REQUEST_TAKE_PHOTO:
